@@ -1,0 +1,26 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.container {
+  display: -ms-flex;
+  display: flex;
+
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.block {
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+
+  -ms-flex-basis: 15em;
+  flex-basis: 15em;
+}
+
+/*@media (min-width: 30em) {
+  .block-item-p {
+    -ms-order: -2;
+    order: -2;
+  }
+}*/
