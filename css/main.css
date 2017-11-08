@@ -114,6 +114,14 @@ label {
   color: #FFFF4D;
 }
 
+/*.portfolio-feature-image img {
+  padding: 5em;
+}*/
+
+.portfolio-piece {
+  margin: 0 10em;
+}
+
 
 /* .............................COLOUR PALETTE STYLING...............*/
 
