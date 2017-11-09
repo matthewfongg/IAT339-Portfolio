@@ -1,11 +1,11 @@
+/* ............................IMPORTED FONTS....................*/
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 @import url('https://fonts.googleapis.com/css?family=Muli');
 
 /* .............................TYPOGRAPHY STYLING...............*/
 body {
-  background-color: #FFFFEE;
-  padding: 0 5em;
+  background-color: #DDDDDD;
 }
 
 h1, h2, h3, h4 {
@@ -16,12 +16,27 @@ p, label, a, li {
   font-family: 'Muli', sans-serif;
 }
 
+p {
+  line-height: 200%;
+  text-align: justify;
+}
+
 ol, ul {
   text-align: left;
+  padding-right: 5em;
+  padding-left: 1.2em;
 }
 
 label {
   font-style: italic;
+}
+
+li {
+  line-height: 200%;
+}
+
+.main-body {
+  padding: 0 20em;
 }
 
 .style-guide-content {
@@ -35,6 +50,7 @@ label {
 }
 
 .page-title {
+  margin-top: 0;
   text-align: center;
   font-size: 3em;
   text-transform: uppercase;
@@ -42,7 +58,12 @@ label {
   letter-spacing: 5px;
 }
 
+.main-page-title {
+  color: #FFFFFF;
+}
+
 .page-section-title {
+  margin-top: 0;
   font-size: 2em;
   letter-spacing: 5px;
   color: #B30000;
@@ -57,11 +78,13 @@ label {
 }
 
 .page-subsection-title {
+  margin-top: 0;
   font-size: 1.5em;
   letter-spacing: 2px;
 }
 
 .page-label-heading {
+  margin-top: 0;
   font-size: 1em;
   letter-spacing: 1px;
 }
@@ -76,7 +99,6 @@ label {
 .hyperlink:hover, .hyperlink:focus {
   color: #FF3333;
   text-decoration: underline;
-
 }
 
 .button {
@@ -91,14 +113,38 @@ label {
   letter-spacing: 3px;
 }
 
+/*a.button {
+  margin: 5em 0;
+}*/
+
 .button:hover, .button:focus {
   background-color: #00CC44;
 }
 /* .............................COMPONENT STYLING...............*/
 
+header {
+  margin: 7em 0;
+}
+
+#homepage {
+  background-image: url(../img/placeholder.png);
+  padding: 10em 0;
+}
+
 .main-nav {
-  /*margin: 1em 10em;*/
-  padding: 2em;
+  background-color: #FFFFFF;
+  padding: 2em 2em;
+  width: 100%;
+}
+
+.header-nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.footer-nav {
+  bottom: 0;
 }
 
 .main-nav-item {
@@ -108,22 +154,45 @@ label {
   color: #009933;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
+  text-align: right;
+}
+
+.main-nav-item-home {
+  text-align: left;
 }
 
 .main-nav-item:hover, .main-nav-item:focus {
-  color: #FFFF4D;
+  color: #00CC44;
 }
 
-/*.portfolio-feature-image img {
-  padding: 5em;
-}*/
+.content-card {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 3em;
+  border-radius: 0.5em;
+  margin: 2em 0;
+}
 
 .portfolio-piece {
   margin: 0 10em;
 }
 
+.feature-copy {
+  width: 33.3%;
+}
 
-/* .............................COLOUR PALETTE STYLING...............*/
+.feature-image {
+  width: 100%;
+  height: auto;
+}
+
+.project-image {
+  width: auto;
+  height: 15em;
+  justify-content: center;
+  }
+
+
+/* .............................STYLE GUIDE COLOUR PALETTE STYLING...............*/
 
 #red1 {
   background-color: #FF3333;
@@ -164,7 +233,7 @@ label {
   background-color: #006622;
 }
 
-/* .............................GRID STRUCTURE STYLING...............*/
+/* .............................STYLE GUIDE GRID STRUCTURE STYLING...............*/
 
 .col1 {
   background-color: #000;
