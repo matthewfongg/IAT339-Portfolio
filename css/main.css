@@ -5,8 +5,7 @@
 
 /* .............................TYPOGRAPHY STYLING...............*/
 body {
-  background-color: #FFFFEE;
-  padding: 0 10em;
+  background-color: #DDDDDD;
 }
 
 h1, h2, h3, h4 {
@@ -17,12 +16,27 @@ p, label, a, li {
   font-family: 'Muli', sans-serif;
 }
 
+p {
+  line-height: 200%;
+  text-align: justify;
+}
+
 ol, ul {
   text-align: left;
+  padding-right: 5em;
+  padding-left: 1.2em;
 }
 
 label {
   font-style: italic;
+}
+
+li {
+  line-height: 200%;
+}
+
+.main-body {
+  padding: 0 20em;
 }
 
 .style-guide-content {
@@ -36,6 +50,7 @@ label {
 }
 
 .page-title {
+  margin-top: 0;
   text-align: center;
   font-size: 3em;
   text-transform: uppercase;
@@ -44,11 +59,11 @@ label {
 }
 
 .main-page-title {
-  text-align: left;
-  margin-left: 7em;
+  color: #FFFFFF;
 }
 
 .page-section-title {
+  margin-top: 0;
   font-size: 2em;
   letter-spacing: 5px;
   color: #B30000;
@@ -63,11 +78,13 @@ label {
 }
 
 .page-subsection-title {
+  margin-top: 0;
   font-size: 1.5em;
   letter-spacing: 2px;
 }
 
 .page-label-heading {
+  margin-top: 0;
   font-size: 1em;
   letter-spacing: 1px;
 }
@@ -96,24 +113,38 @@ label {
   letter-spacing: 3px;
 }
 
+/*a.button {
+  margin: 5em 0;
+}*/
+
 .button:hover, .button:focus {
   background-color: #00CC44;
 }
 /* .............................COMPONENT STYLING...............*/
 
 header {
-  margin: 5em 0;
+  margin: 7em 0;
 }
 
 #homepage {
   background-image: url(../img/placeholder.png);
-  /*margin: 3em 10em;*/
   padding: 10em 0;
 }
 
 .main-nav {
-  margin: 0;
-  padding: 2em;
+  background-color: #FFFFFF;
+  padding: 2em 2em;
+  width: 100%;
+}
+
+.header-nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.footer-nav {
+  bottom: 0;
 }
 
 .main-nav-item {
@@ -123,10 +154,22 @@ header {
   color: #009933;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
+  text-align: right;
+}
+
+.main-nav-item-home {
+  text-align: left;
 }
 
 .main-nav-item:hover, .main-nav-item:focus {
-  color: #FFFF4D;
+  color: #00CC44;
+}
+
+.content-card {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 3em;
+  border-radius: 0.5em;
+  margin: 2em 0;
 }
 
 .portfolio-piece {
@@ -138,8 +181,15 @@ header {
 }
 
 .feature-image {
-  width: 66.6%
+  width: 100%;
+  height: auto;
 }
+
+.project-image {
+  width: auto;
+  height: 15em;
+  justify-content: center;
+  }
 
 
 /* .............................STYLE GUIDE COLOUR PALETTE STYLING...............*/

@@ -10,7 +10,6 @@
   flex-wrap: wrap;
 
   position: relative;
-  margin-top: 5em;
 }
 
 .block {
@@ -32,6 +31,17 @@
   flex-basis: 15em;
   width: 100%;
 }
+
+.block6 {
+  display: inline-block;
+  -ms-flex-grow: 6;
+  flex-grow: 6;
+
+  -ms-flex-basis: 15em;
+  flex-basis: 15em;
+  width: 100%;
+}
+
 
 /*.block2 img {
   width: 100%;
