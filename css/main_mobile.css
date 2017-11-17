@@ -72,14 +72,27 @@ li {
   left: 0;
   right: 0;
   top: 10%;
-   /*left: 50%;
-  transform:(-50%, -50%);*/
-  /*left: 30em;*/
 }
 
 .subtitle {
   top: 50%
 }
+
+.project-page-title {
+  color: #FFFFFF;
+  letter-spacing: 7.5px;
+  /*position: absolute;*/
+  /*margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 10%;*/
+}
+
+
+
+
+
 
 #landing-page-title {
   /*padding-top: 9em;
@@ -159,7 +172,7 @@ li {
   padding: 5em 0;
 }*/
 
-#landing-page-image {
+#landing-page-header {
   /*position: relative;*/
   /*background-image: url(../img/Baymax.jpg);*/
   /*background-size: contain;*/
@@ -170,8 +183,13 @@ li {
 
 }
 
-#landing-page-image img {
+#landing-page-header img {
   width: 100%;
+}
+
+.project-page-header {
+  position: relative;
+  margin: 4.5em 0 2em 0;
 }
 
 
