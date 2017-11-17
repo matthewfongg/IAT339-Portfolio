@@ -14,6 +14,7 @@ h1, h2, h3, h4 {
 
 p, label, a, li {
   font-family: 'Muli', sans-serif;
+  font-size: 0.8em;
 }
 
 p {
@@ -38,7 +39,7 @@ li {
 }
 
 .main-body {
-  padding: 0 20em;
+  padding: 3.5em 0.5em;
 }
 
 .style-guide-content {
@@ -54,7 +55,7 @@ li {
 .page-title {
   margin-top: 0;
   text-align: center;
-  font-size: 3em;
+  font-size: 1.5em;
   text-transform: uppercase;
   color: #B30000;
   letter-spacing: 5px;
@@ -62,15 +63,30 @@ li {
 
 .main-page-title {
   color: #FFFFFF;
-  text-align: left;
   letter-spacing: 7.5px;
-  background-color: #000;
+  /*background-color: #000;*/
+  /*width: 100%;*/
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 10%;
+   /*left: 50%;
+  transform:(-50%, -50%);*/
+  /*left: 30em;*/
+}
+
+.subtitle {
+  top: 50%
 }
 
 #landing-page-title {
-  padding-top: 9em;
-  margin-left: 40%;
-  width: 60%;
+  /*padding-top: 9em;
+  margin-left: 40%;*/
+  /*width: 100%;*/
+  /*position: relative;
+  top: 1em;*/
 }
 
 .page-section-title {
@@ -93,6 +109,7 @@ li {
   margin-top: 0;
   font-size: 1.5em;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .page-label-heading {
@@ -120,15 +137,15 @@ li {
 }
 
 .button a {
-text-decoration: none;
--webkit-transition: background-color 0.5s ease-out;
-transition: background-color 0.5s ease-out;
-border-radius: 0.2em;
-color: #FFF;
-background-color: #006622;
-padding: 0.75em 2.5em;
-text-transform: uppercase;
-letter-spacing: 3px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  border-radius: 0.2em;
+  color: #FFF;
+  background-color: #006622;
+  padding: 0.75em 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 
@@ -137,25 +154,29 @@ letter-spacing: 3px;
 }
 /* .............................COMPONENT STYLING...............*/
 
-header {
-  margin: 10em 0 5em 0;
-}
-
-#homepage {
+/*#homepage {
   padding: 5em 0;
-}
+}*/
 
 #landing-page-image {
-  /*background-image: url(../img/placeholder.png);*/
-  position: absolute;
-  width: 40%;
-  z-index: -1;
+  /*position: relative;*/
+  /*background-image: url(../img/Baymax.jpg);*/
+  /*background-size: contain;*/
+  /*position: left;*/
+  /*z-index: -1;*/
+  position: relative;
+  margin: 4.5em 0 2em 0;
+
+}
+
+#landing-page-image img {
+  width: 100%;
 }
 
 
 .main-nav {
   background-color: #FFFFFF;
-  padding: 1.5em 2em;
+  /*padding: 1.5em 2em;*/
   width: 100%;
 }
 
@@ -176,11 +197,12 @@ header {
   color: #009933;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
-  text-align: right;
+  /*text-align: right;*/
+  padding: 0;
 }
 
 .main-nav-item-home {
-  text-align: left;
+  /*text-align: left;*/
 }
 
 .main-nav-item:hover, .main-nav-item:focus {
@@ -189,7 +211,7 @@ header {
 
 .content-card {
   background-color: rgba(255, 255, 255, 0.6);
-  padding: 3em;
+  padding: 1em;
   border-radius: 0.5em;
   margin: 2em 0;
 }
