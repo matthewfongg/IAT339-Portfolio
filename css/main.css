@@ -5,15 +5,17 @@
 
 /* .............................TYPOGRAPHY STYLING...............*/
 body {
-  background-color: rgba(175, 175, 175, 0.5);
+  background-color: rgba(200, 200, 200, 0.5);
+  min-width: 320px;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Lato', sans-serif;
 }
 
-p, label, a, li {
+p, label, a, li, figcaption {
   font-family: 'Muli', sans-serif;
+  font-size: 0.8em;
 }
 
 p {
@@ -38,7 +40,7 @@ li {
 }
 
 .main-body {
-  padding: 0 20em;
+  padding: 3.5 0.5em;
 }
 
 .style-guide-content {
@@ -54,7 +56,7 @@ li {
 .page-title {
   margin-top: 0;
   text-align: center;
-  font-size: 3em;
+  font-size: 1.5em;
   text-transform: uppercase;
   color: #B30000;
   letter-spacing: 5px;
@@ -62,23 +64,44 @@ li {
 
 .main-page-title {
   color: #FFFFFF;
-  text-align: left;
   letter-spacing: 7.5px;
-  background-color: #000;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 10%;
+}
+
+.subtitle {
+  top: 50%;
+}
+
+.project-page-title {
+  color: #FFFFFF;
+  letter-spacing: 7.5px;
+  /*position: absolute;*/
+  /*margin-left: auto;
+  margin-right: auto; */
+  /*left: 0;*/
+  /*right: 0;
+  top: 10%;*/
 }
 
 #landing-page-title {
-  padding-top: 9em;
-  margin-left: 40%;
-  width: 60%;
+  /*padding-top: 9em;
+  margin-left: 40%;*/
+  /*width: 100%;*/
+  /*position: relative;
+  top: 1em;*/
 }
 
 .page-section-title {
   text-transform: uppercase;
   margin-top: 0;
-  font-size: 2em;
+  font-size: 1.25em;
   letter-spacing: 5px;
-  color: #B30000;
+  color: #172477;
 }
 
 .section-divider {
@@ -93,6 +116,7 @@ li {
   margin-top: 0;
   font-size: 1.5em;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .page-label-heading {
@@ -114,21 +138,22 @@ li {
 }
 
 .button {
-  margin-top: 3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
   /*padding-right: 5em;*/
   text-align: center;
 }
 
 .button a {
-text-decoration: none;
--webkit-transition: background-color 0.5s ease-out;
-transition: background-color 0.5s ease-out;
-border-radius: 0.2em;
-color: #FFF;
-background-color: #006622;
-padding: 0.75em 2.5em;
-text-transform: uppercase;
-letter-spacing: 3px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  border-radius: 0.2em;
+  color: #FFF;
+  background-color: #006622;
+  padding: 0.75em 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 
@@ -137,25 +162,34 @@ letter-spacing: 3px;
 }
 /* .............................COMPONENT STYLING...............*/
 
-header {
-  margin: 10em 0 5em 0;
-}
-
-#homepage {
+/*#homepage {
   padding: 5em 0;
+}*/
+
+#landing-page-header {
+  /*position: relative;*/
+  /*background-image: url(../img/Baymax.jpg);*/
+  /*background-size: contain;*/
+  /*position: left;*/
+  /*z-index: -1;*/
+  position: relative;
+  margin: 4.5em 0 2em 0;
+
 }
 
-#landing-page-image {
-  /*background-image: url(../img/placeholder.png);*/
-  position: absolute;
-  width: 40%;
-  z-index: -1;
+#landing-page-header img {
+  width: 100%;
+}
+
+.project-page-header {
+  position: relative;
+  margin: 4.5em 0 2em 0;
 }
 
 
 .main-nav {
   background-color: #FFFFFF;
-  padding: 1.5em 2em;
+  /*padding: 1.5em 2em;*/
   width: 100%;
 }
 
@@ -176,11 +210,8 @@ header {
   color: #009933;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
-  text-align: right;
-}
-
-.main-nav-item-home {
-  text-align: left;
+  /*text-align: right;*/
+  padding: 0;
 }
 
 .main-nav-item:hover, .main-nav-item:focus {
@@ -189,9 +220,32 @@ header {
 
 .content-card {
   background-color: rgba(255, 255, 255, 0.6);
-  padding: 3em;
+  padding: 1em;
   border-radius: 0.5em;
   margin: 2em 0;
+}
+
+.content-card img {
+  width: 100%;
+}
+
+.trello-image img {
+  width: 48%;
+}
+
+.trello-image figure img {
+  width: 45%;
+  /*margin: 0;*/
+}
+
+.trello-image figure figcaption {
+  width: 45%;
+  /*margin: 0;*/
+}
+
+
+.copy {
+  margin-top: 0;
 }
 
 .portfolio-piece {
@@ -270,4 +324,125 @@ header {
 
 .col5 {
   background-color: #444;
+}
+
+/* ...............................MEDIA QUERIES.................................. */
+
+@media (min-width: 18em) {
+  .header-nav {
+    position: relative;
+  }
+
+  #landing-page-header {
+    position: relative;
+    margin: 0 0 2em 0;
+  }
+
+  .main-body {
+    padding: 0.5em;
+  }
+
+  .project-page-header {
+    margin: 2em 0;
+  }
+
+}
+
+@media (min-width: 30em) {
+
+  #landing-page-header {
+    position: relative;
+    margin: 0 0 2em 0;
+  }
+
+  .main-body {
+    padding: 0 1rem;
+  }
+}
+
+
+@media (min-width: 55em) {
+
+  .main-body {
+    padding: 0 7.5em;
+  }
+}
+
+@media (min-width: 70em) {
+
+  .main-body {
+    padding: 0 15em;
+  }
+}
+
+@media (min-width: 83em) {
+
+  p, label, a, li {
+    font-size: 1em;
+  }
+
+  .main-body {
+    padding: 0 20em;
+  }
+
+  header {
+    margin: 7em 0 5em 0;
+  }
+
+  .header-nav {
+    position: fixed;
+  }
+
+  .main-nav {
+    padding: 1.5em 2em;
+  }
+
+  .main-nav-item {
+    text-align: right;
+
+  }
+  .main-nav-item-home {
+    text-align: left;
+  }
+
+
+  #landing-page-header img {
+    width: 66%;
+  }
+
+  #landing-page-image {
+    z-index: -1;
+  }
+
+  #landing-page-title {
+    /*padding-top: 9em;
+    padding-left: 5em;*/
+  }
+
+  .page-title {
+    font-size: 3em;
+  }
+
+  .main-page-title {
+    background-color: #000;
+    text-align: left;
+    left: 40%;
+    top: 50%;
+  }
+
+  .subtitle {
+    top: 70%;
+  }
+
+  .page-section-title {
+    font-size: 2em;
+  }
+
+  .page-subsection-title {
+    text-align: left;
+  }
+
+  .content-card {
+    padding: 3em;
+  }
 }
