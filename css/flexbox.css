@@ -13,7 +13,6 @@
 }
 
 .block {
-  /*display: inline-block;*/
   -ms-flex-grow: 1;
   flex-grow: 1;
 
@@ -24,7 +23,6 @@
 }
 
 .block2 {
-  /*display: inline-block;*/
   -ms-flex-grow: 2;
   flex-grow: 2;
 
@@ -35,9 +33,7 @@
 
 }
 
-.main-nav-item {
-  display: in-
-}
+
 
 
 /*.block2 img {

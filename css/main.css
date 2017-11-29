@@ -5,7 +5,7 @@
 
 /* .............................TYPOGRAPHY STYLING...............*/
 body {
-  background-color: rgba(200, 200, 200, 0.5);
+  background-color: rgba(220, 220, 220, 0.5);
   min-width: 320px;
 }
 
@@ -19,7 +19,7 @@ p, label, a, li, figcaption {
 }
 
 p {
-  line-height: 200%;
+  line-height: 150%;
   text-align: justify;
 }
 
@@ -36,7 +36,7 @@ label {
 }
 
 li {
-  line-height: 200%;
+  line-height: 150%;
 }
 
 .main-body {
@@ -64,6 +64,7 @@ li {
 
 .header-title {
   color: #FFFFFF;
+  background-color: rgba(0,0,0, 0.8);
   letter-spacing: 7.5px;
   position: absolute;
   margin-left: auto;
@@ -77,6 +78,10 @@ li {
   top: 50%;
 }
 
+.landing-page-title {
+  padding: 0.5em;
+}
+
 .project-page-title {
   color: #FFFFFF;
   letter-spacing: 7.5px;
@@ -85,6 +90,7 @@ li {
 .page-section-title {
   text-transform: uppercase;
   margin-top: 0;
+  margin-bottom: 0.5em;
   font-size: 1.25em;
   letter-spacing: 5px;
   color: #172477;
@@ -115,18 +121,17 @@ li {
 
 .hyperlink {
   text-decoration: none;
-  color: #B30000;
+  color: #663399;
 }
 
 .hyperlink:hover, .hyperlink:focus {
-  color: #FF3333;
+  color: #9966cc;
   text-decoration: underline;
 }
 
 .button {
   margin-top: 2em;
   margin-bottom: 1em;
-  /*padding-right: 5em;*/
   text-align: center;
 }
 
@@ -148,16 +153,8 @@ li {
 }
 /* .............................COMPONENT STYLING...............*/
 
-/*#homepage {
-  padding: 5em 0;
-}*/
 
 .landing-page-header {
-  /*position: relative;*/
-  /*background-image: url(../img/Baymax.jpg);*/
-  /*background-size: contain;*/
-  /*position: left;*/
-  /*z-index: -1;*/
   position: relative;
   margin: 4.5em 0 2em 0;
 
@@ -175,7 +172,6 @@ li {
 
 .main-nav {
   background-color: #FFFFFF;
-  /*padding: 1.5em 2em;*/
   width: 100%;
 }
 
@@ -193,15 +189,14 @@ li {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  color: #009933;
+  color: #336699;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
-  /*text-align: right;*/
   padding: 0;
 }
 
 .main-nav-item:hover, .main-nav-item:focus {
-  color: #00CC44;
+  color: #339999;
 }
 
 .content-card {
@@ -314,6 +309,25 @@ li {
 
 /* ...............................MEDIA QUERIES.................................. */
 
+@media (min-width: 5em) {
+
+  a.block.main-nav-item {
+    flex-basis: 50%;
+  }
+
+  .header-title {
+    color: #FFFFFF;
+    background-color: rgba(0,0,0, 0.8);
+    letter-spacing: 7.5px;
+    position: relative;
+  }
+
+  .subtitle {
+    top: 50%;
+  }
+
+}
+
 @media (min-width: 18em) {
   .header-nav {
     position: relative;
@@ -321,7 +335,7 @@ li {
 
   .landing-page-header {
     position: relative;
-    margin: 0 0 2em 0;
+    margin: 0;
   }
 
   .main-body {
@@ -332,7 +346,18 @@ li {
     margin: 2em 0;
   }
 
+  .page-title {
+    font-size: 1.5em;
+  }
+  .page-section-title {
+    font-size: 1.25em;
+  }
+
+  .page-subsection-title {
+    font-size: 1em;
+  }
 }
+
 
 @media (min-width: 30em) {
 
@@ -344,14 +369,84 @@ li {
   .main-body {
     padding: 0 1rem;
   }
+
+  .main-nav {
+    padding: 1em 2em;
+  }
+}
+
+@media (min-width: 48em) {
+
+  p, label, a, li {
+    font-size: 1em;
+  }
+
+  .page-section-title {
+    font-size: 1.75em;
+  }
+
+  a.block.main-nav-item {
+    flex-basis: 10em;
+  }
+
+  header {
+    margin: 5em 0 2.5em 0;
+  }
+
+  .header-nav {
+    position: fixed;
+  }
+
+  .landing-page-header img {
+    width: 66%;
+  }
+
+  .landing-page-image {
+    z-index: -1;
+  }
+
+  .page-title {
+    font-size: 2em;
+  }
+
+  .header-title {
+    background-color: #000;
+    padding: 0;
+    text-align: left;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    line-height: 100%;
+  }
+
+  .subtitle {
+    top: 70%;
+  }
 }
 
 
 @media (min-width: 55em) {
-
   .main-body {
     padding: 0 7.5em;
   }
+
+  header {
+    margin: 7em 0 5em 0;
+  }
+
+  .header-nav {
+    position: fixed;
+  }
+
+
+  .main-nav-item {
+    text-align: right;
+
+  }
+  .main-nav-item-home {
+    text-align: left;
+  }
+
 }
 
 @media (min-width: 70em) {
@@ -364,33 +459,16 @@ li {
 @media (min-width: 83em) {
 
   p, label, a, li {
+    font-size: 1.2em;
+  }
+
+  .hyperlink {
     font-size: 1em;
   }
 
   .main-body {
     padding: 0 20em;
   }
-
-  header {
-    margin: 7em 0 5em 0;
-  }
-
-  .header-nav {
-    position: fixed;
-  }
-
-  .main-nav {
-    padding: 1.5em 2em;
-  }
-
-  .main-nav-item {
-    text-align: right;
-
-  }
-  .main-nav-item-home {
-    text-align: left;
-  }
-
 
   .landing-page-header img {
     width: 66%;
@@ -400,20 +478,13 @@ li {
     z-index: -1;
   }
 
-  .landing-page-title {
-    /*padding-top: 9em;
-    padding-left: 5em;*/
-  }
-
-  .page-title {
-    font-size: 3em;
-  }
-
   .header-title {
     background-color: #000;
+    padding: 0;
     text-align: left;
     left: 40%;
     top: 50%;
+    line-height: 100%;
   }
 
   .subtitle {
@@ -421,14 +492,25 @@ li {
   }
 
   .page-section-title {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .page-subsection-title {
+    font-size: 2em;
     text-align: left;
   }
 
   .content-card {
-    padding: 3em;
+    padding: 1em 3em;
+  }
+
+  a.block.main-nav-item {
+    flex-basis: 25%;
+  }
+}
+
+@media (min-width: 95em) {
+  .page-title {
+    font-size: 3em;
   }
 }
