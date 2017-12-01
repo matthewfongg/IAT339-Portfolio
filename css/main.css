@@ -13,7 +13,7 @@ h1, h2, h3, h4 {
   font-family: 'Lato', sans-serif;
 }
 
-p, label, a, li, figcaption {
+p, a, li, figcaption {
   font-family: 'Muli', sans-serif;
   font-size: 0.8em;
 }
@@ -31,9 +31,6 @@ ol, ul {
   padding-left: 1.2em;
 }
 
-label {
-  font-style: italic;
-}
 
 li {
   line-height: 150%;
@@ -58,8 +55,18 @@ li {
   text-align: center;
   font-size: 1.5em;
   text-transform: uppercase;
-  color: #B30000;
-  letter-spacing: 5px;
+  letter-spacing: 7.5px;
+  color: #FFFFFF;
+}
+
+.page-title-sg {
+  color: #000000;
+}
+
+
+.header-title-sg {
+  background-color: rgba(0,0,0, 0.8);
+
 }
 
 .header-title {
@@ -111,11 +118,6 @@ li {
   text-align: center;
 }
 
-.page-label-heading {
-  margin-top: 0;
-  font-size: 1em;
-  letter-spacing: 1px;
-}
 
 /* .............................INTERACTIVE ELEMENT STYLING...............*/
 
@@ -233,33 +235,35 @@ li {
   justify-content: center;
   }
 
+img.icon {
+  width: 66px;
+  height: 54px;
+}
+
 /* .............................STYLE GUIDE COLOUR PALETTE STYLING...............*/
 
-#red1 {
-  background-color: #FF3333;
+#blue1 {
+  background-color: #339999;
 }
 
-#red2 {
-  background-color: #E60000;
+#blue2 {
+  background-color: #337899;
 }
 
-#red3 {
-  background-color: #B30000;
+#blue3 {
+  background-color: #336699;
 }
 
-#yellow1 {
-  background-color: #FFFFB3;
-  color: #000;
+#purple1 {
+  background-color: #CC99FF;
 }
 
-#yellow2 {
-  background-color: #FFFF80;
-  color: #000;
+#purple2 {
+  background-color: #9966CC;
 }
 
-#yellow3 {
-  background-color: #FFFF4D;
-  color: #000;
+#purple3 {
+  background-color: #663399;
 }
 
 #green1 {
@@ -366,7 +370,7 @@ li {
 
 @media (min-width: 48em) {
 
-  p, label, a, li {
+  p, a, li {
     font-size: 1em;
   }
 
@@ -415,6 +419,11 @@ li {
 
 
 @media (min-width: 55em) {
+
+  .style-guide-content {
+    text-align: center;
+  }
+
   .main-body {
     padding: 0 7.5em;
   }
@@ -447,7 +456,11 @@ li {
 
 @media (min-width: 83em) {
 
-  p, label, a, li {
+  .style-guide-content {
+    text-align: center;
+  }
+
+  p, li {
     font-size: 1.2em;
   }
 
@@ -486,7 +499,6 @@ li {
 
   .page-subsection-title {
     font-size: 2em;
-    text-align: left;
   }
 
   .content-card {
