@@ -31,7 +31,6 @@ ol, ul {
   padding-left: 1.2em;
 }
 
-
 li {
   line-height: 150%;
 }
@@ -63,10 +62,8 @@ li {
   color: #000000;
 }
 
-
 .header-title-sg {
   background-color: rgba(0,0,0, 0.8);
-
 }
 
 .header-title {
@@ -118,6 +115,9 @@ li {
   text-align: center;
 }
 
+.copy {
+  margin-top: 0;
+}
 
 /* .............................INTERACTIVE ELEMENT STYLING...............*/
 
@@ -149,7 +149,6 @@ li {
   letter-spacing: 3px;
 }
 
-
 .button a:hover, .button a:focus {
   background-color: #00CC44;
 }
@@ -162,15 +161,10 @@ li {
 
 }
 
-.landing-page-header img {
-  width: 100%;
-}
-
 .project-page-header {
   position: relative;
   margin: 4.5em 0 2em 0;
 }
-
 
 .main-nav {
   background-color: #FFFFFF;
@@ -208,20 +202,14 @@ li {
   margin: 2em 0;
 }
 
+/* ..........................IMAGE STYLING....................................*/
+
 .content-card img {
   width: 100%;
 }
 
 .trello-image img {
   width: 49%;
-}
-
-.copy {
-  margin-top: 0;
-}
-
-.portfolio-piece {
-  margin: 0 10em;
 }
 
 .feature-image {
@@ -235,9 +223,8 @@ li {
   justify-content: center;
   }
 
-img.icon {
-  width: 66px;
-  height: 54px;
+.landing-page-header img {
+  width: 100%;
 }
 
 /* .............................STYLE GUIDE COLOUR PALETTE STYLING...............*/
@@ -303,7 +290,6 @@ img.icon {
 /* ...............................MEDIA QUERIES.................................. */
 
 @media (min-width: 5em) {
-
   a.block.main-nav-item {
     flex-basis: 50%;
   }
@@ -353,7 +339,6 @@ img.icon {
 
 
 @media (min-width: 30em) {
-
   .landing-page-header {
     position: relative;
     margin: 0 0 2em 0;
@@ -369,7 +354,6 @@ img.icon {
 }
 
 @media (min-width: 48em) {
-
   p, a, li {
     font-size: 1em;
   }
@@ -417,9 +401,7 @@ img.icon {
   }
 }
 
-
 @media (min-width: 55em) {
-
   .style-guide-content {
     text-align: center;
   }
@@ -436,7 +418,6 @@ img.icon {
     position: fixed;
   }
 
-
   .main-nav-item {
     text-align: right;
 
@@ -448,14 +429,12 @@ img.icon {
 }
 
 @media (min-width: 70em) {
-
   .main-body {
     padding: 0 15em;
   }
 }
 
 @media (min-width: 83em) {
-
   .style-guide-content {
     text-align: center;
   }

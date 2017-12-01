@@ -2,49 +2,31 @@
   box-sizing: border-box;
 }
 
+/* ................CONTAINER TO HOLD BLOCK CONTENT............................*/
 .container {
   display: -ms-flex;
   display: flex;
-
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-
   position: relative;
 }
 
+/* ............... BLOCK TO HOLD COMPONENTS...................................*/
+
+/* ...............standard block..............................................*/
 .block {
   -ms-flex-grow: 1;
   flex-grow: 1;
-
   -ms-flex-basis: 15em;
   flex-basis: 15em;
-  /*padding: 1em;*/
   padding: 0.5em;
 }
 
+/* ...............block with heavier weight...................................*/
 .block2 {
   -ms-flex-grow: 2;
   flex-grow: 2;
-
   -ms-flex-basis: 15em;
   flex-basis: 15em;
-  /*padding: 1em;*/
   padding: 0.5em;
-
 }
-
-
-
-
-/*.block2 img {
-  width: 100%;
-}*/
-
-
-
-/*@media (min-width: 30em) {
-  .block-item-p {
-    -ms-order: -2;
-    order: -2;
-  }
-}*/
