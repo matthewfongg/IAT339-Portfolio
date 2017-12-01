@@ -211,19 +211,8 @@ li {
 }
 
 .trello-image img {
-  width: 48%;
+  width: 49%;
 }
-
-.trello-image figure img {
-  width: 45%;
-  /*margin: 0;*/
-}
-
-.trello-image figure figcaption {
-  width: 45%;
-  /*margin: 0;*/
-}
-
 
 .copy {
   margin-top: 0;
